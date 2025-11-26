@@ -6,6 +6,8 @@
   "_copy_without_render": [
     "cliff.toml",
     "**/cliff.toml",
-    "{{cookiecutter.project_name}}/.github/workflows/build.yml"
+    ".github/**",
+    ".github/workflows/**",
+    ".github/workflows/build.yml"
   ]
 }
