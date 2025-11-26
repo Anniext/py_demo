@@ -2,5 +2,6 @@
   "email": "dasaying@gmail.com",
   "project_name": "python simple project",
   "project_short_description": "",
-  "python_version": "3.12"
+  "python_version": "3.12",
+  "app_name": ""
 }
