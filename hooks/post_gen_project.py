@@ -26,17 +26,13 @@ LEGACY_DEP_FILES = [
 
 
 def clean_extra_package_management_files():
-    """Remove legacy dependency management files and optional Heroku files.
+    """Remove legacy dependency management files.
 
     The template is uv-first, keeping ``pyproject.toml`` and ``uv.lock`` as
     the single source of dependency management.
     """
 
-    use_heroku = "{{cookiecutter.use_heroku}}"
     to_delete = list(LEGACY_DEP_FILES)
-
-    if use_heroku == "False":
-        to_delete.extend(["Procfile", "app.json"])
 
     try:
         for file_or_dir in to_delete:
