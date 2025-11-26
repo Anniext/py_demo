@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. See [conven
 # template for the changelog body
 # https://keats.github.io/tera/docs/#introduction
 body = """
+{%- raw -%}
 ---
 {% if version %}\
     {% if previous.version %}\
@@ -37,6 +38,7 @@ body = """
         {% endif -%}
     {% endfor -%}
 {% endfor %}\n
+{%- endraw -%}
 """
 # template for the changelog footer
 footer = """
