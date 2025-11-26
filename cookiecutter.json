@@ -3,5 +3,9 @@
   "project_name": "python simple project",
   "project_short_description": "",
   "python_version": "3.12",
-  "app_name": ""
+  "app_name": "app",
+  "use_heroku": [
+    "False",
+    "True"
+  ]
 }
